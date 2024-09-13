@@ -1,0 +1,5 @@
+@import './index.css';
+* {
+    font-family: 'Proxima Nova Condensed', sans-serif;
+    color: #444444;
+}
