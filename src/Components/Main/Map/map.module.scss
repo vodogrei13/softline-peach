@@ -1,0 +1,192 @@
+.nav__container {
+    margin: 0 auto;
+    max-width: 1233px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    .nav__office{
+        display: flex; 
+        align-items: center;
+        box-shadow: 0px 1px 4px 1px rgba(141,150,178,.3);
+        padding-right: 70px;
+        margin-bottom: 92px;
+        .block_address_info {
+            display: flex;
+            gap: 30px;
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 600;
+            padding-left: 180px;
+            .active {
+                color: #A30C33;
+                border-bottom: 4px solid #A30C33;
+                padding-bottom: 6.68px;
+                margin: 0;
+                transform: none;
+                font-weight: 600;
+            } 
+            .sity__nav_item {
+                list-style-type: none;
+                text-decoration: none;
+                white-space: nowrap;
+                &:hover {
+                    color: #A30C32;
+                }
+                &:active {
+                    color: #A30C33;
+                    border-bottom: 4px solid #A30C33;
+                    padding-bottom: 6.68px;
+                    margin: 0;
+                    transform: none;
+                    font-weight: 600;
+                }
+            }
+        }
+        .office {
+            position: relative;
+            display: flex;
+            align-items: center;
+            .nav__title {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 100%;
+                padding-left: 70px;
+                white-space: nowrap;
+            }
+            .chevron {
+                padding-left: 6px;
+                &.up > svg {
+                transform: scaleY(-1);
+              }
+            } 
+            .menu {
+                position: absolute;
+                background-color: #ffffff;
+                z-index: 2;
+                top: 68px;
+                min-width: 120px;
+                padding: 30px 68.5px;
+                .menu__list {
+                    display: flex;
+                    gap: 24px;
+                    list-style-type: none;
+                    font-size: 18px;
+                    line-height: 20px;
+                    .big__sity_item {
+                        font-weight: 600;
+                        color: #444444;
+                        .sity__center_list {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            padding-top: 10px;
+                            margin: 0;
+                            padding-left: 0;
+                            
+                            .sity__item {
+                                list-style-type: none;
+                                font-weight: 300;
+                                color: #444444;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.swiper {
+    padding-left: 30px;
+}
+@media (max-width: 330px) { 
+    .nav__container {
+        max-width: 290px;
+        padding-top: 60px;
+        .nav__office{
+            display: flex; 
+            align-items: center;
+            .block_address_info {
+                display: flex;
+                gap: 30px;
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: 600;
+                padding-left: 180px;
+                .active {
+                    color: #A30C33;
+                    border-bottom: 4px solid #A30C33;
+                    padding-bottom: 6.68px;
+                    margin: 0;
+                    transform: none;
+                    font-weight: 600;
+                } 
+                .sity__nav_item {
+                    list-style-type: none;
+                    text-decoration: none;
+                    white-space: nowrap;
+                    &:hover {
+                        color: #A30C32;
+                    }
+                    &:active {
+                        color: #A30C33;
+                        border-bottom: 4px solid #A30C33;
+                        padding-bottom: 6.68px;
+                        margin: 0;
+                        transform: none;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .office {
+                position: relative;
+                display: flex;
+                align-items: center;
+                .nav__title {
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 100%;
+                    padding-left: 70px;
+                    white-space: nowrap;
+                }
+                .chevron {
+                    padding-left: 6px;
+                    &.up > svg {
+                    transform: scaleY(-1);
+                  }
+                } 
+                .menu {
+                    z-index: 2;
+                    top: 68px;
+                    min-width: 290px;
+                    padding: 30px 68.5px;
+                    .menu__list {
+                        display: flex;
+                        gap: 24px;
+                        list-style-type: none;
+                        font-size: 14px;
+                        .big__sity_item {
+                            font-weight: 600;
+                            color: #444444;
+                            .sity__center_list {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                padding-top: 10px;
+                                margin: 0;
+                                padding-left: 0;
+                                
+                                .sity__item {
+                                    list-style-type: none;
+                                    font-weight: 300;
+                                    color: #444444;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
